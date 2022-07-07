@@ -1,0 +1,119 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+header, footer {
+     background-color: black;
+     color: white;
+     text-decoration: none;
+}
+
+a {
+     text-decoration: none;
+     color: white;
+}
+
+nav a {
+     color: gray;
+}
+
+nav a:hover {
+     color: white;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, footer {
+     display: flex;
+     width: 100%;
+     height: 10vh;
+     flex-direction: row;
+     justify-content: space-around;
+     border: 2px solid black;
+}
+/* Logo Area */
+#logo-section {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     
+}
+#logo-section img{
+     object-fit: contain;
+     width: 25%;
+     height: auto;
+}
+#logo-title {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+#logo-title * {
+     margin: 0;
+}
+
+/* Nav */
+
+nav {
+     display: flex;
+     width: 25%;
+     align-items: center;
+     justify-content: space-evenly;
+}
+.main-section {
+     display: flex;
+     width: 100%;
+     height: 50vh;
+     align-items: center;
+     flex-direction: column;
+     border: 2px solid black;
+}
+
+.row {
+     display: flex;
+     flex-direction: row;
+}
+
+.dot {
+     width: 15px;
+     height: 15px;
+     background: rgba(0,0,0,0.75);
+     border-radius: 12px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* @media screen and (max-width: 800px) {
+     section {
+         background: blue;
+     }
+ } */
+
+ #top-page {
+     background-image: url("../images/gallery/P3.jpg");
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+ }
